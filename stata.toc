@@ -1,0 +1,5 @@
+v 1.0
+d 'fi_fgp': Calculate fiscal impoverishment and fiscal gains to the poor
+d from {browse "http://www.sciencedirect.com/science/article/pii/S0304387816300220":Higgins and Lustig (2016)}
+d Available on {browse "https://github.com/skhiggins/fiscal_impoverishment":GitHub} 
+p fi_fgp
