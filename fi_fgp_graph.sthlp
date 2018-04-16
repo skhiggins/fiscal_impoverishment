@@ -6,7 +6,7 @@
 {title:Title}
 
 {p 4 11 2}
-{hi:fi_fgp graph} {hline 2} Graphs fiscal impoverishment (FI) and fiscal gains to the poor (FGP) measures from Higgins and Lustig (2016).
+{hi:fi_fgp graph} {hline 2} Graphs fiscal impoverishment (FI) and fiscal gains to the poor (FGP) curves from Higgins and Lustig (2016).
 
 {title:Syntax}
 
@@ -160,12 +160,10 @@ Pending
 
 {title:Author}
 
-{p 4 4 2}Sean Higgins, CEQ Institute, sean.higgins@ceqinstitute.org
+{p 4 4 2}Sean Higgins, UC Berkeley, seanhiggins@berkeley.edu
 
 
 {title:References}
-
-{pstd}Commitment to Equity (CEQ) {browse "http://www.commitmentoequity.org":website}.{p_end}
 
 {phang}
 Higgins, Sean and Nora Lustig. 2016. {browse "http://www.sciencedirect.com/science/article/pii/S0304387816300220":"Can a Poverty-Reducing and Progressive Tax and Transfer System Hurt the Poor?"} Journal of Development Economics 122, 63-75.{p_end}

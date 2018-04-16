@@ -187,6 +187,8 @@ program define fi_fgp, rclass
 	;	
 	#delimit cr
 	
+	version 13
+	
 	**********
 	** LOCALS *
 	**********
@@ -209,7 +211,7 @@ program define fi_fgp, rclass
 		local die display as error in smcl
 		local command fi_fgp
 		local version 1.0
-		`dit' "Running version `version' of `command' on `c(current_date)' at `c(current_time)'" _n "   (please report this information if reporting a bug to sean.higgins@ceqinstitute.org)"
+		`dit' "Running version `version' of `command' on `c(current_date)' at `c(current_time)'" _n "   (please report this information if reporting a bug to seanhiggins@berkeley.edu)"
 		
 		************************
 		** PRESERVE AND MODIFY *
