@@ -13,6 +13,7 @@ os.chdir('C:/Dropbox/CEQGates/fiscal_impoverishment')
 
 # LISTS
 ados = [
+	'fiscal_impoverishment',
 	'fi_fgp',
 	'fi_fgp_graph'
 ]
