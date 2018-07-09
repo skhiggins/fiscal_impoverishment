@@ -236,7 +236,7 @@ program define fi_fgp, rclass
 				}
 			}
 		}
-		if wordcount("`inctypewarn'")>0 `dit' "Warning: Income variable(s) `inctypewarn' not stored in double format. This may lead to substantial discrepancies in the MWB due to rounding error."
+		if wordcount("`inctypewarn'")>0 `dit' "Warning: Income variable(s) `inctypewarn' not stored in double format. This may lead to substantial discrepancies due to rounding error."
 		
 
 
@@ -277,7 +277,7 @@ program define fi_fgp, rclass
 		** ppp conversion
 		if (`ppp'==-1 & `cpisurvey'==-1 & `cpibase'==-1) {
 			local _ppp = 0
-			`dit' "{bf:ppp}, {bf:cpisurvey}, {bf:cpibase} options aren't selected. Variables are assumed to be in ppp dollars per day"
+			** `dit' "{bf:ppp}, {bf:cpisurvey}, {bf:cpibase} options aren't selected. Variables are assumed to be in ppp dollars per day"
 		}
 		else local _ppp = 1
 		if (`_ppp' & min(`ppp',`cpisurvey',`cpibase')==-1) {
@@ -289,7 +289,7 @@ program define fi_fgp, rclass
 			exit 198
 		}
 		if ((`_ppp' == 1) & (wordcount("`daily' `monthly' `yearly'")==0)) {
-			`dit' "Warning: {bf:daily}, {bf:monthly}, or {bf:yearly} options not specified; variables assumed to be in {bf:yearly} units"
+			** `dit' "Warning: {bf:daily}, {bf:monthly}, or {bf:yearly} options not specified; variables assumed to be in {bf:yearly} units"
 			local yearly yearly
 		}
 		if (wordcount("`daily' `monthly' `yearly'")>1) {
@@ -340,11 +340,7 @@ program define fi_fgp, rclass
 
 		
 		** Calculating FI and FGP
-		#delimit ;
 		_fi_fgp `y0_ppp' `y1_ppp' `aw', `options'
-		
-		;
-		#delimit cr
 		
 		return scalar fi = `r(_fi)' 
 		return scalar fg = `r(_fg)'
